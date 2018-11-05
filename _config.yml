@@ -14,13 +14,10 @@ future: true
 # SNS settings
 RSS: false
 weibo_username:     jetlin0818
-zhihu_username:     jetlin0818
+#zhihu_username:     jetlin0818
 github_username:    jetlin0818
 twitter_username:   jetlin0818
-#facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
-
-
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -31,7 +28,6 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
 #timezone: CN  
-
 
 
 # Gems
@@ -106,7 +102,5 @@ friends: [
     #     title: "Su",
     #     href: "http://su.gallery/"
     # },{
-        title: "乱序",
-        href: "http://mida.re/"
     }
 ]
