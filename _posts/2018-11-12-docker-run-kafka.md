@@ -15,7 +15,9 @@ tags:
 一、下载kafka，zookeeper镜像
 
 `$ docker search kafka`
+
 `$ docker pull wurstmeister/zookeeper`
+
 `$ docker pull wurstmeister/kafka`
 
 二、启动镜像
