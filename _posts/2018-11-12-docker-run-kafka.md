@@ -23,13 +23,16 @@ tags:
 二、启动镜像
 1. 先启动zookeeper
 `$ docker run -d --name zookeeper -p 2181:2181 wurstmeister/zookeeper:latest`
+
 2. 再启动kafka
 `$ docker run -d --name kafka -p 9092:9092 -e KAFKA_BROKER_ID=0 -e KAFKA_ZOOKEEPER_CONNECT=10.12.161.207:2181 -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://10.12.161.207:9092 -e KAFKA_LISTENERS=PLAINTEXT://0.0.0.0:9092 -t wurstmeister/kafka`
 
 三、测试收发消息
 * 进入docker容器内
+```
 `$ docker exec -it ${CONTAINER ID} /bin/bash `
 `$ cd /opt/kafka_2.11-0.10.1.1/`
+```
 
 * 创建topic
 `$ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test`
